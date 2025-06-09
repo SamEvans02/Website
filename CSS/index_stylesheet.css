@@ -1,0 +1,72 @@
+.Navbar_Gradient {
+    /*background: linear-gradient(black, lightslategrey);*/
+    height: 100px;
+}
+.Main_Background_Gradient {
+    background: linear-gradient(lightslategrey, lightgrey);
+    height: 1000px;
+}
+
+
+
+
+
+
+
+.Main_Link {
+    float: left;
+    margin-left: 20px;
+    margin-right: 60px;
+}
+.Main_Link:hover {
+    opacity: .6;
+    transition: opacity .2s ease-in-out;
+}
+
+
+.Main_Links_Padding_After_Main_Link {
+    margin-left: 200px;
+}
+.Main_Links {
+    float: left;
+    margin-left: 35px;
+    opacity: 1;
+}
+.Main_Links:hover {
+    opacity: .6;
+    transition: opacity .2s ease-in-out;
+}
+
+
+
+
+
+
+
+.Navbar {
+    height: 100px;
+}
+.Navbar_Top_Padding {
+    margin-top: 25px;
+}
+
+
+
+
+.Navbar_Icons_Right_Padding {
+    margin-right: 35px;
+}
+
+
+.Navbar_Icons {
+    float: right;
+    margin-top: 2px;
+    opacity: 1;
+    
+}
+
+.Navbar_Icons:hover {
+    opacity: .7;
+    transition: opacity .2s ease-in-out;
+
+}
