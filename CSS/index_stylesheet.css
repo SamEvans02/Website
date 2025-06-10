@@ -1,32 +1,57 @@
-.Navbar_Gradient {
-    /*background: linear-gradient(black, lightslategrey);*/
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, lightslategrey, white);
+}
+
+
+
+
+
+
+
+
+.Main_Background_Gradient {
+    height: 100%;
+}
+
+
+
+
+
+/*Navbar Modifications*/
+.Navbar {
     height: 100px;
 }
-.Main_Background_Gradient {
-    background: linear-gradient(lightslategrey, lightgrey);
-    height: 1000px;
+.Navbar_Padding {
+    margin-top: 20px;
 }
 
 
 
 
-
-
-
+/*The main links in the Navbar*/
 .Main_Link {
     float: left;
-    margin-left: 20px;
-    margin-right: 60px;
+    padding-left: 20px;
+    padding-right: 35px; /*Controls spacing after main (Home) link*/
+
+    /*color: darkblue;*/ /*Color is in HTML*/
+    font-family: Arial, Helvetica, sans-serif;
 }
 .Main_Link:hover {
     opacity: .6;
     transition: opacity .2s ease-in-out;
 }
 
-
-.Main_Links_Padding_After_Main_Link {
-    margin-left: 200px;
+.Main_Links_Padding {
+    height: 100px;
+    width: 100%;       /* Full width */
+    display: flex;     /* Optional: aligns child items horizontally */
+    align-items: left;
+    padding: 0px 0px 0px 0px;   /* Optional: spacing inside the navbar */
 }
+
 .Main_Links {
     float: left;
     margin-left: 35px;
@@ -43,18 +68,17 @@
 
 
 
-.Navbar {
-    height: 100px;
-}
-.Navbar_Top_Padding {
-    margin-top: 25px;
-}
+
 
 
 
 
 .Navbar_Icons_Right_Padding {
+    float: right;
+    margin-left: auto;
     margin-right: 35px;
+    flex: 0 0 auto;
+    justify-content: flex-end;
 }
 
 
