@@ -7,6 +7,11 @@ body {
 
 a {
     text-decoration: none;
+    cursor: pointer;
+}
+a[target="_blank"] {
+    /* cursor: url('../Images/icons8-hand-cursor.svg'), pointer; */
+    /* cursor: alias; */
 }
 a.Active_Link {
     color: lightseagreen;
@@ -25,15 +30,15 @@ a.Active_Link {
 
 
 
-.Main_Background_Gradient {
+/*.Main_Background_Gradient {
     height: 100%;
-}
+}*/
 
 
 
 
 
-/*Navbar Modifications*/
+/*------------------------------------ Navbar Modifications ------------------------------------*/
 .Navbar {
     padding-top: 20px;
     height: 80px;
@@ -48,24 +53,24 @@ a.Active_Link {
 
 
 
-/*The main links in the Navbar*/
+/*The main link in the Navbar*/
 .Main_Link {
     float: left;
-
-    color: darkblue;
+    
+    color: rgb(70, 219, 157);
     text-decoration: underline;
-    /* text-decoration-color: red; */
-    text-decoration-thickness: 5px;
-    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
 
     padding-top: 4px;
     padding-bottom: 5px;
     padding-left: 20px;
-    padding-right: 35px; /*Controls spacing after main (Home) link*/
+    padding-right: 5%; /*Controls spacing after main (Home) link*/
     margin-bottom: 70px;
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: underline;
+    font-size: large;
+    white-space: nowrap; /*Disabled text-wrapping*/
 }
 
 
@@ -77,11 +82,35 @@ a.Active_Link {
     text-decoration-color: whitesmoke;
     text-decoration-thickness: 3px;
     transition: linear, .9s;
+
+    height: 20px;
+    /* width: 220px; */
+    border-radius: 2px 0px 2px 0px;
+    cursor: url('../Images/Cursors/icons8-hand-cursor.svg'), pointer; /*Temporary, feel free to use elsewhere...*/
+}
+
+
+.Main_Link_Active {
+    float: left;
+
+    color: rgb(70, 219, 157);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+
+    padding-top: 4px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 35px; /*Controls spacing after main (Home) link*/
+    margin-bottom: 70px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
 }
 
 
 
-
+/*The main links in the Navbar*/
 .Main_Links_Padding {
     height: 100px;
     width: 100%;       /* Full width */
@@ -140,7 +169,7 @@ a.Active_Link {
 }
 
 .Navbar_Icons:hover {
-    opacity: .7;
+    opacity: .65;
     transition: opacity .2s ease-in-out;
-
+    cursor: alias;
 }
